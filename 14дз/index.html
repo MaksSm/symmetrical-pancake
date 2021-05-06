@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  let vasya = { name: "Вася", age: 25, averageMark: 70 };
+  let petya = { name: "Петя", age: 16, averageMark: 100 };
+  let masha = { name: "Маша", age: 28, averageMark: 50 };
+  let users = [ vasya, petya, masha ];
+  let users1 = users.map(function(item) {
+    return item.name
+  });
+  console.log('1')
+  console.log(users1) 
+  let users2 = users.map(function(item) { 
+    return item
+  });
+  users2.push({name: "Коля", age: 15, averageMark: 60})
+  console.log('2')
+  console.log(users2) 
+  let users3 = users.map(function(item) {
+    return item
+  });
+  let userss = users.filter(item => item.age > 18);
+  console.log('3')
+  console.log(userss) 
+  let users4 = users.map(function(item) {
+    return item
+  });
+  let usersss = users.filter(item => item.averageMark >= 50);
+  console.log('4')
+  console.log(usersss) 
+  let users5 = users.map(function(item) {
+    return item
+  });
+  users5.shift()
+  users5.unshift({name: "максим", age: 15, averageMark: 60})
+  console.log('5')
+  console.log(users5) 
+  let users6 = users.map(function(item) {
+    return item
+  });
+  let userssss = users.filter(item => item.name === petya.name);
+  console.log('6')
+  console.log(userssss)
+  </script>
+</body>
+</html>
